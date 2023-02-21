@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Writing</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <div class="row">
+          <div class="col-3">
+            <span>WORDS</span>
+            <h6 id="word">0</h6>
+          </div>
+          <div class="col-3">
+            <span>SENTENCES</span>
+            <h6 id="sentence">0</h6>
+          </div>
+          <div class="col-3">
+            <span>PARAGRAPHS</span>
+            <h6 id="paragraph">0</h6>
+          </div>
+        </div>
+        <div class="editor-wrapper">
+          <textarea
+            id="myTextarea"
+            class="editor-input"
+            placeholder="Type or paste your text"
+            autofocus=""
+            data-pt-editor="true"
+            data-gramm_editor="false"
+            spellcheck="false"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="bottom-content">
+        <div class="switch-toggle">
+          <div>Autosave</div>
+          <div>
+            <input type="checkbox" id="autosaveInput" />
+            <label for="autosaveInput"></label>
+          </div>
+        </div>
+
+        <button onclick="setFileName()" class="btndownload">DOWNLOAD</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
